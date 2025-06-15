@@ -1,0 +1,2 @@
+id,name,goal,start_date,end_date,description,visibility,budget,category,flagged,spon_id
+1,camp1,camp1 goals,2024-11-29T00:00:00,2024-12-06T00:00:00,camp1 description,True,100,FINANCE,False,1

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Report</title>
+</head>
+<body>
+    <div>
+        <h2>Hi, {{ name }}</h2>
+        <h4>Here is your monthly campaigns report</h4>
+        <p style="color: red;size:50%;">*negetive budget denotes, you're in overbudget for advertisements.</p>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Campaign Title</th>
+                    <th>Ads Done</th>
+                    <th>Expense</th>
+                    <th>Budget</th>
+                    <th>Remaining Budget</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for campaign in campaign_info %}
+                <tr>
+                    <td>{{ campaign.name }}</td>
+                    <td>{{ campaign.no_ads }}</td>
+                    <td>$ {{ campaign.expense }}</td>
+                    <td>$ {{ campaign.budget }}</td>
+                    <td>$ {{ campaign.remaining_budget }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <p>Total Ads: {{ total_no_ads }}</p>
+        <p>Total Expense: {{ total_expense }}</p>
+        <h3>From Operation Team</h3>
+    </div>
+</body>
+</html>

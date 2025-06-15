@@ -1,0 +1,13 @@
+INSTRUCTIONS TO RUN THE APP:
+
+The complete project folder have to be in your wsl/linux sysytem.(For mac just bit change in commands.)
+
+Then create a virtual environment using "python3 -m venv <env_name>"
+Then activate the virtual environment using "source <env_name>/bin/activate"
+After that you have to install all the dependency using "pip3 install -r requirements.txt"
+Finally run the following commands in different terminals :
+
+To run the flask app =>      python3 app.py
+To run the celery worker =>  celery -A app:celery_app worker -l INFO
+To run the celery beat =>    celery -A app:celery_app beat -l INFO
+To run the MailHog =>        ~/go/bin/MailHog
