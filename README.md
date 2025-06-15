@@ -45,7 +45,7 @@ This platform simplifies **Influencer Marketing** by allowing:
 | Frontend | HTML + Bootstrap + Vue.js (via CDN) |
 | Background Tasks | Celery + Redis |
 | Authentication | Flask-Security |
-| Notifications | Email or Google Chat Webhook |
+| Notifications | Mail Hog |
 
 ---
 
@@ -67,3 +67,4 @@ This platform simplifies **Influencer Marketing** by allowing:
 
 - Navigate to http://localhost:5000
 - The App uses Vue via CDN
+- Read cmd.txt file in the code folder

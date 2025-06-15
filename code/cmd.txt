@@ -11,3 +11,8 @@ To run the flask app =>      python3 app.py
 To run the celery worker =>  celery -A app:celery_app worker -l INFO
 To run the celery beat =>    celery -A app:celery_app beat -l INFO
 To run the MailHog =>        ~/go/bin/MailHog
+
+# Already Existed Users
+email :- admin@gmail.com, password :- admin, role - Admin
+email :- spon1@gmail.com, password :- spon1, role - Sponsor
+email :- inf1@gmail.com, password :- inf1, role - Influencer
